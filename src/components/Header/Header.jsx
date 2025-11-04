@@ -27,7 +27,7 @@ const Header = () => {
                             </div>
                         ))
                     }
-                    <button onClick={handler}>Login</button>
+                    <button onClick={handler} className='bg-amber-200 rounded px-4 py-1 text-gray-600'>Login</button>
                 </ul>
             </div>
         </div>
