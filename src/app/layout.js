@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {children}
+        <Header />
+        <div className="h-screen">
+          {children}
+
+        </div>
+        <h2 className="text-center bg-gray-700 py-5 text-2xl text-white">This is my Footer</h2>
       </body>
     </html>
   );
