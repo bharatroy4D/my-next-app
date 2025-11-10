@@ -14,6 +14,7 @@ const Header = () => {
         { "name": "About", "link": "/about" },
         { "name": "Contact", "link": "/contact" },
         { "name": "Blogs", "link": "/blogs" },
+        { "name": "Post", "link": "/post" },
     ]
     if(PathName.includes("dashboard")) return <div className='bg-yellow-200 py-3'>Dashboard layout</div>
     return (
