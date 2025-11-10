@@ -22,9 +22,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
-        <div className="h-screen">
+        <div>
           {children}
-
         </div>
         <h2 className="text-center bg-gray-700 py-5 text-2xl text-white">This is my Footer</h2>
       </body>
