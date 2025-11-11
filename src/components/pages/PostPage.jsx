@@ -18,20 +18,20 @@ const PostPage = async () => {
 
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {
-                    postData?.slice(0, 20)?.map((post) => (
+                    postData?.slice(0, 20)?.map(({id, title, body}) => (
                         <div
-                            key={post.id}
+                            key={id}
                             className='border rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 bg-white p-5 cursor-pointer flex flex-col justify-between'
                         >
                             <h1 className='text-xl font-semibold text-gray-800 mb-2 line-clamp-2'>
-                                {post.title}
+                                {title}
                             </h1>
 
                             <p className='text-gray-600 text-sm leading-6 line-clamp-4 flex-grow'>
-                                {post.body}
+                                {body}
                             </p>
 
-                            <Link href={`/post/${post.id}`}>
+                            <Link href={`/post/${id}`}>
                                 <button className='mt-4 bg-amber-500 hover:bg-amber-600 text-white text-sm px-4 py-2 rounded-md transition-all'>
                                     Read More
                                 </button>
